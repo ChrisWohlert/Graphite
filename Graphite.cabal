@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 1007c6a4eb204fa1fe2838af79b32ebba5da1a5859d4ce032a1320e407d5af1d
+-- hash: 4e0ff48b393eab01a55f818dc980288df87344c2e6ff1fbafad176c960f41cba
 
 name:           Graphite
 version:        0.1.0.0
@@ -39,6 +39,7 @@ library
     , mtl
     , reanimate
     , reanimate-svg
+    , text
   default-language: Haskell2010
 
 executable Graphite-exe
@@ -55,6 +56,7 @@ executable Graphite-exe
     , mtl
     , reanimate
     , reanimate-svg
+    , text
   default-language: Haskell2010
 
 test-suite Graphite-test
@@ -72,4 +74,5 @@ test-suite Graphite-test
     , mtl
     , reanimate
     , reanimate-svg
+    , text
   default-language: Haskell2010
