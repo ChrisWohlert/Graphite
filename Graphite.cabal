@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4e0ff48b393eab01a55f818dc980288df87344c2e6ff1fbafad176c960f41cba
+-- hash: 023ff9a05cb1adea009b4da4b5f1e622a208720e22d91633c97d910ec5af4fc5
 
 name:           Graphite
 version:        0.1.0.0
@@ -27,8 +27,10 @@ source-repository head
 
 library
   exposed-modules:
+      AnimEnv
       GraphAnimation
       Lib
+      Types
   other-modules:
       Paths_Graphite
   hs-source-dirs:

@@ -1,3 +1,6 @@
+{-# LANGUAGE OverloadedStrings #-}
+
+
 module Main where
 
 
@@ -12,6 +15,7 @@ import GraphAnimation
 import Graphics.SvgTree.Types hiding (Text)
 import Data.Text hiding (map, concatMap, zipWith, foldl)
 import Data.Foldable
+import Types
 
 main :: IO ()
-main = reanimate $ rootEnv $ setDuration 4 $ sceneAnimation barScene
+main = reanimate $ rootEnv $ setDuration 4 $ animateGraph (BarChart [Bar "Name" 6, Bar "Name" 2, Bar "Name" 4] (BarChartSetting (BarSetting (curveS 5)) ["blue", "green"]))
